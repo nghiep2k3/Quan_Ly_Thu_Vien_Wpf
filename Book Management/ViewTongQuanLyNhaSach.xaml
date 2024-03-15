@@ -1,0 +1,136 @@
+﻿<Window x:Name="ViewTong" x:Class="Book_Management.ViewTongQuanLyNhaSach"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Book_Management"
+        mc:Ignorable="d"
+        Title="Quản Lý Nhà Sách" Height="450" Width="1250" FontFamily="Times New Roman" WindowStartupLocation="CenterScreen" Loaded="ViewTong_Loaded"
+    Language="vi-VN" xml:lang="vi-VN">
+    <Window.Background>
+        <ImageBrush ImageSource="/Hinhanh/anhnenthuvien.jpg"/>
+    </Window.Background>
+    <Grid>
+        <ListView x:Name="lstSach" HorizontalAlignment="Center" Height="262" Margin="0,45,0,0" VerticalAlignment="Top" Width="1250" Opacity="0.8">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="TÊN SÁCH" DisplayMemberBinding="{Binding TENSACH}" Width="280"/>
+                    <GridViewColumn Header="TÁC GIẢ" DisplayMemberBinding="{Binding TENTG}" Width="200"/>
+                    <GridViewColumn Header="LĨNH VỰC" DisplayMemberBinding="{Binding TENLINHVUC}" Width="150"/>
+                    <GridViewColumn Header="LOẠI SÁCH" DisplayMemberBinding="{Binding TENLOAISACH}" Width="150"/>
+                    <GridViewColumn Header="GIÁ BÌA" DisplayMemberBinding="{Binding GIABIA}" Width="80"/>
+                    <GridViewColumn Header="LẦN TB" DisplayMemberBinding="{Binding LANTAIBAN}" Width="80"/>
+                    <GridViewColumn Header="TÊN NXB" DisplayMemberBinding="{Binding TENNHAXUATBAN}" Width="160"/>
+                    <GridViewColumn Header="NĂM XB" DisplayMemberBinding="{Binding NAMXUATBAN}" Width="150"/>
+
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Menu Margin="0,0,0,389" Background="#FF57E36A">
+
+            <MenuItem Header="Tài Khoản" FontFamily="Times New Roman" FontSize="16">
+                <MenuItem.Icon>
+                    <Image Source="/Hinhanh/admin-settings.png" />
+                </MenuItem.Icon>
+
+                <MenuItem x:Name="MenuCapNhatThongTin" Header="Cập nhật thông tin" FontFamily="Times New Roman" FontSize="15" Click="MenuCapNhatThongTin_Click">
+                    <MenuItem.Icon>
+                        <Image Source="/Hinhanh/addcontacttwitter.jpg" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem x:Name="MenuThemTaiKhoan" Header="Thêm tài khoản" FontFamily="Times New Roman" FontSize="15" Click="MenuThemTaiKhoan_Click">
+                    <MenuItem.Icon>
+                        <Image Source="/Hinhanh/user_icon-01.svg.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem x:Name="MenuDangXuat" Header="Đăng xuất" FontFamily="Times New Roman" FontSize="15" Click="MenuDangXuat_Click">
+                    <MenuItem.Icon>
+                        <Image Source="/Hinhanh/logout.jpg" />
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Sách" FontFamily="Times New Roman" FontSize="16">
+                <MenuItem.Icon>
+                    <Image Source="/Hinhanh/book-icon.png"/>
+                </MenuItem.Icon>
+
+                <MenuItem x:Name="MenuThemSach" Header="Thêm sách" FontFamily="Times New Roman" FontSize="15" Click="MenuThemSach_Click">
+                    <MenuItem.Icon>
+                        <Image Source="/Hinhanh/books_blue_add.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem x:Name="MenuSuaSach" Header="Sửa sách" FontFamily="Times New Roman" FontSize="15" Click="MenuSuaSach_Click">
+                    <MenuItem.Icon>
+                        <Image Source="/Hinhanh/books_blue_edit.png"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem x:Name="MenuXoaSach" Header="Xóa sách" FontFamily="Times New Roman" FontSize="15" Click="MenuXoaSach_Click">
+                    <MenuItem.Icon>
+                        <Image Source="/Hinhanh/book_blue_delete.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem x:Name="MenuLinhVuc" Header="Lĩnh vực" Click="MenuLinhVuc_Click" FontFamily="Times New Roman" FontSize="16">
+                <MenuItem.Icon>
+                    <Image Source="/Hinhanh/4097889.png" />
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem x:Name="MenuLoaiSach" Header="Loại sách" Click="MenuLoaiSach_Click" FontFamily="Times New Roman" FontSize="16">
+                <MenuItem.Icon>
+                    <Image Source="/Hinhanh/book-png-17.jpg" />
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Header="Tác giả" FontSize="16" FontFamily="Times New Roman">
+                <MenuItem.Icon>
+                    <Image Source="/Hinhanh/icons8-user-100.png" />
+                </MenuItem.Icon>
+
+                <MenuItem x:Name="MenuThemTacGia" Header="Thêm tác giả" FontFamily="Times New Roman" FontSize="15" Click="MenuThemTacGia_Click">
+                    <MenuItem.Icon>
+                        <Image Source="/Hinhanh/user_icon-01.svg.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem x:Name="MenuSuaTacGia" Header="Sửa tác giả" FontFamily="Times New Roman" FontSize="15" Click="MenuSuaTacGia_Click">
+                    <MenuItem.Icon>
+                        <Image Source="/Hinhanh/author-icon.jpg" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem x:Name="MenuXoaTacGia" Header="Xóa tác giả" FontFamily="Times New Roman" FontSize="15" Click="MenuXoaTacGia_Click">
+                    <MenuItem.Icon>
+                        <Image Source="/Hinhanh/18926562.jpg" />
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem x:Name="MenuHoaDon" Header="Hóa đơn" FontFamily="Times New Roman" FontSize="16" Click="MenuHoaDon_Click">
+                <MenuItem.Icon>
+                    <Image Source="/Hinhanh/design-vector.jpg" />
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem x:Name="MenuKho" Header="Kho" FontSize="16" FontFamily="Times New Roman" Click="MenuKho_Click">
+                <MenuItem.Icon>
+                    <Image Source="/Hinhanh/quan-ly-kho.png" />
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem x:Name="MenuNhaXuatBan" Header="Nhà xuất bản" FontFamily="Times New Roman" FontSize="16" Click="MenuNhaXuatBan_Click">
+                <MenuItem.Icon>
+                    <Image Source="/Hinhanh/2069719.png" />
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem x:Name="MenuThongKe" Header="Thống kê" FontFamily="Times New Roman" FontSize="16" Click="MenuThongKe_Click" Width="95">
+                <MenuItem.Icon>
+                    <Image Source="/Hinhanh/statistics-icon.png" />
+                </MenuItem.Icon>
+            </MenuItem>
+            <Button Content="Refresh" Height="26" Width="59" Click="Button_Click" BorderBrush="#FF702222" Foreground="#FF701515" Background="#FF57E36A"/>
+        </Menu>
+        <Label Content="Người dùng:" HorizontalAlignment="Left" Height="26" Margin="1045,22,0,0" VerticalAlignment="Top" Width="88" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="txtTenNguoiDung" HorizontalAlignment="Left" Height="20" Margin="1154,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86" FontSize="14" Background="{x:Null}" FontWeight="Bold"/>
+
+        <Label Content="Doanh thu trong ngày:" HorizontalAlignment="Left" Height="26" Margin="10,330,0,0" VerticalAlignment="Top" Width="160" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="txtDoanhThu" HorizontalAlignment="Left" Height="26" Margin="175,330,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="204" FontSize="14" Background="{x:Null}" FontWeight="Bold"/>
+        <Label Content="Số lượng khách:" Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="26" Margin="10,375,0,0" VerticalAlignment="Top" Width="140" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="txtSLKhach" HorizontalAlignment="Left" Height="26" Margin="175,375,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="204" FontSize="14" Background="{x:Null}" FontWeight="Bold" TextChanged="txtSLKhach_TextChanged"/>
+        <Label x:Name="lblTime" Content="Thứ xxxx, ngày yy, tháng zz, năm tttt" HorizontalAlignment="Left" Height="26" Margin="984,370,0,0" VerticalAlignment="Top" Width="239" FontSize="14" FontWeight="Bold"/>
+
+    </Grid>
+</Window>

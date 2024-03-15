@@ -1,0 +1,69 @@
+﻿<Window x:Class="Book_Management.LoaiSach"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Book_Management"
+        mc:Ignorable="d"
+        Background="#FFAEEFB2"
+        Title="Loại Sách" Height="400" Width="511" FontFamily="Times New Roman" FontSize="14" WindowStartupLocation="CenterScreen">
+    <Grid Margin="10,0,0,-6">
+        <ListView x:Name="dgvLoaiSach" HorizontalAlignment="Left" Height="211" Margin="0,10,0,0" VerticalAlignment="Top" Width="475">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label Content="Thêm loại sách:" HorizontalAlignment="Left" Height="24" Margin="0,248,0,0" VerticalAlignment="Top" Width="105" FontFamily="Times New Roman" FontSize="14"/>
+        <TextBox x:Name="txtThemLoaiSach" HorizontalAlignment="Center" Height="25" Margin="0,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="241" FontFamily="Times New Roman" FontSize="14"/>
+        <Label Content="Xóa loại sách:" HorizontalAlignment="Left" Height="25" Margin="0,308,0,0" VerticalAlignment="Top" Width="95" FontFamily="Times New Roman" FontSize="14"/>
+        <ComboBox x:Name="cbXoaLoaiSach" HorizontalAlignment="Center" Height="25" Margin="0,308,0,0" VerticalAlignment="Top" Width="241" FontFamily="Times New Roman" FontSize="14"/>
+        <Button x:Name="btThemLoaiSach" Content="Thêm" HorizontalAlignment="Left" Height="25" 
+                Margin="402,247,0,0" VerticalAlignment="Top" Width="75" FontFamily="Times New Roman" 
+                FontSize="14"  Click="btThemLoaiSach_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                            <RotateTransform Angle="-64.983" CenterX="0.5" CenterY="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FFE1DCFA"/>
+                    <GradientStop Color="#FFE7F6FD" Offset="5"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btXoaLoaiSach" Content="Xóa" HorizontalAlignment="Left" Height="25" 
+                Margin="402,308,0,0" VerticalAlignment="Top" Width="75" Click="btXoaLoaiSach_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                            <RotateTransform Angle="-64.983" CenterX="0.5" CenterY="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FFE1DCFA"/>
+                    <GradientStop Color="#FFE7F6FD" Offset="5"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

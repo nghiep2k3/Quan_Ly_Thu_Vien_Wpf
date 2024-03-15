@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3E623ABD-A344-4147-8163-AE3C57EFD51F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Book_Management</RootNamespace>
+    <AssemblyName>Book Management</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Syncfusion.Licensing, Version=21.2460.4.0, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Licensing.21.2.4\lib\net46\Syncfusion.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Shared.WPF, Version=21.2460.4.0, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Shared.WPF.21.2.4\lib\net46\Syncfusion.Shared.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.5, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.8.5\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="ChiTietHoaDon.xaml.cs">
+      <DependentUpon>ChiTietHoaDon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DATA\Account.cs" />
+    <Compile Include="DATA\DataProvider.cs" />
+    <Compile Include="HoaDon.xaml.cs">
+      <DependentUpon>HoaDon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kho.xaml.cs">
+      <DependentUpon>Kho.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LinhVuc.xaml.cs">
+      <DependentUpon>LinhVuc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LoaiSach.xaml.cs">
+      <DependentUpon>LoaiSach.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NhaXuatBan.xaml.cs">
+      <DependentUpon>NhaXuatBan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SuaSach.xaml.cs">
+      <DependentUpon>SuaSach.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SuaTacGia.xaml.cs">
+      <DependentUpon>SuaTacGia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TaiKhoan.xaml.cs">
+      <DependentUpon>TaiKhoan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ThemHoaDon.xaml.cs">
+      <DependentUpon>ThemHoaDon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ThemSach.xaml.cs">
+      <DependentUpon>ThemSach.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ThemTacGia.xaml.cs">
+      <DependentUpon>ThemTacGia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ThemTaiKhoan.xaml.cs">
+      <DependentUpon>ThemTaiKhoan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKe.xaml.cs">
+      <DependentUpon>ThongKe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTongQuanLyNhaSach.xaml.cs">
+      <DependentUpon>ViewTongQuanLyNhaSach.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XoaSach.xaml.cs">
+      <DependentUpon>XoaSach.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XoaTacGia.xaml.cs">
+      <DependentUpon>XoaTacGia.xaml</DependentUpon>
+    </Compile>
+    <Page Include="ChiTietHoaDon.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HoaDon.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kho.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LinhVuc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoaiSach.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="NhaXuatBan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SuaSach.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SuaTacGia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TaiKhoan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ThemHoaDon.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ThemSach.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ThemTacGia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ThemTaiKhoan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ThongKe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewTongQuanLyNhaSach.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="XoaSach.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="XoaTacGia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Hinhanh\dangnhap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Hinhanh\icons8-user-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Hinhanh\anhnenthuvien.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Hinhanh\seo-friendly-blog-posts.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Hinhanh\666201.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Hinhanh\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Hinhanh\book-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Hinhanh\book_blue_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Hinhanh\books_blue_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Hinhanh\books_blue_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Hinhanh\author-icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Hinhanh\user_icon-01.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Hinhanh\18926562.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Hinhanh\logout.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Hinhanh\addcontacttwitter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Hinhanh\admin-settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Hinhanh\book-png-17.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Hinhanh\statistics-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Hinhanh\2069719.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Hinhanh\design-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Hinhanh\4097889.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Hinhanh\quan-ly-kho.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Hinhanh\3-dot-icon-7.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

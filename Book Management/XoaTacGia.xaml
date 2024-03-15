@@ -1,0 +1,70 @@
+﻿<Window x:Class="Book_Management.XoaTacGia"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Book_Management"
+        mc:Ignorable="d"
+        Background="#FFAEEFB2"
+        Title="Xóa Tác Giả" Height="444" Width="650" FontFamily="Times New Roman" FontSize="14" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <ListView x:Name="dgvXoaTacGia" HorizontalAlignment="Center" Height="354" Margin="0,10,0,0" VerticalAlignment="Top" Width="630" SelectionChanged="dgvXoaTacGia_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="MÃ TÁC GIẢ" DisplayMemberBinding="{Binding MATG}" Width="140"/>
+                    <GridViewColumn Header="TÊN TÁC GIẢ" DisplayMemberBinding="{Binding TENTG}" Width="180"/>
+                    <GridViewColumn Header="NĂM SINH" DisplayMemberBinding="{Binding NAMSINH}" Width="80"/>
+                    <GridViewColumn Header="NĂM MẤT" DisplayMemberBinding="{Binding NAMMAT}" Width="80"/>
+                    <GridViewColumn Header="QUÊ QUÁN" DisplayMemberBinding="{Binding QUEQUAN}" Width="150"/>
+
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="btXoaTacGia" Content="Xóa tác giả" HorizontalAlignment="Left" Height="25" 
+                Margin="10,374,0,0" VerticalAlignment="Top" Width="85" FontSize="14"
+                Click="btXoaTacGia_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                            <RotateTransform Angle="-64.983" CenterX="0.5" CenterY="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FFE1DCFA"/>
+                    <GradientStop Color="#FFE7F6FD" Offset="5"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btThoat" Content="Thoát" HorizontalAlignment="Left" Height="25" 
+                Margin="575,374,0,0" VerticalAlignment="Top" Width="65"
+                FontSize="14" Click="btThoat_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                            <RotateTransform Angle="-64.983" CenterX="0.5" CenterY="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FFE1DCFA"/>
+                    <GradientStop Color="#FFE7F6FD" Offset="5"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>

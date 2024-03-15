@@ -1,0 +1,110 @@
+D:\QLNS\Book Management\Book Management\bin\Debug\Book Management.exe.config
+D:\QLNS\Book Management\Book Management\bin\Debug\Book Management.exe
+D:\QLNS\Book Management\Book Management\bin\Debug\Book Management.pdb
+D:\QLNS\Book Management\Book Management\bin\Debug\Syncfusion.Licensing.dll
+D:\QLNS\Book Management\Book Management\bin\Debug\Syncfusion.Shared.WPF.dll
+D:\QLNS\Book Management\Book Management\bin\Debug\System.Data.SqlClient.dll
+D:\QLNS\Book Management\Book Management\bin\Debug\Syncfusion.Shared.WPF.xml
+D:\QLNS\Book Management\Book Management\bin\Debug\System.Data.SqlClient.xml
+D:\QLNS\Book Management\Book Management\obj\Debug\Book Management.csproj.AssemblyReference.cache
+D:\QLNS\Book Management\Book Management\obj\Debug\ChiTietHoaDon.g.cs
+D:\QLNS\Book Management\Book Management\obj\Debug\HoaDon.g.cs
+D:\QLNS\Book Management\Book Management\obj\Debug\Kho.g.cs
+D:\QLNS\Book Management\Book Management\obj\Debug\LinhVuc.g.cs
+D:\QLNS\Book Management\Book Management\obj\Debug\LoaiSach.g.cs
+D:\QLNS\Book Management\Book Management\obj\Debug\MainWindow.g.cs
+D:\QLNS\Book Management\Book Management\obj\Debug\NhaXuatBan.g.cs
+D:\QLNS\Book Management\Book Management\obj\Debug\SuaSach.g.cs
+D:\QLNS\Book Management\Book Management\obj\Debug\SuaTacGia.g.cs
+D:\QLNS\Book Management\Book Management\obj\Debug\TaiKhoan.g.cs
+D:\QLNS\Book Management\Book Management\obj\Debug\ThemHoaDon.g.cs
+D:\QLNS\Book Management\Book Management\obj\Debug\ThemSach.g.cs
+D:\QLNS\Book Management\Book Management\obj\Debug\ThemTacGia.g.cs
+D:\QLNS\Book Management\Book Management\obj\Debug\ThemTaiKhoan.g.cs
+D:\QLNS\Book Management\Book Management\obj\Debug\ThongKe.g.cs
+D:\QLNS\Book Management\Book Management\obj\Debug\ViewTongQuanLyNhaSach.g.cs
+D:\QLNS\Book Management\Book Management\obj\Debug\XoaSach.g.cs
+D:\QLNS\Book Management\Book Management\obj\Debug\XoaTacGia.g.cs
+D:\QLNS\Book Management\Book Management\obj\Debug\App.g.cs
+D:\QLNS\Book Management\Book Management\obj\Debug\Book Management_MarkupCompile.cache
+D:\QLNS\Book Management\Book Management\obj\Debug\Book Management_MarkupCompile.lref
+D:\QLNS\Book Management\Book Management\obj\Debug\ChiTietHoaDon.baml
+D:\QLNS\Book Management\Book Management\obj\Debug\HoaDon.baml
+D:\QLNS\Book Management\Book Management\obj\Debug\Kho.baml
+D:\QLNS\Book Management\Book Management\obj\Debug\LinhVuc.baml
+D:\QLNS\Book Management\Book Management\obj\Debug\LoaiSach.baml
+D:\QLNS\Book Management\Book Management\obj\Debug\MainWindow.baml
+D:\QLNS\Book Management\Book Management\obj\Debug\NhaXuatBan.baml
+D:\QLNS\Book Management\Book Management\obj\Debug\SuaSach.baml
+D:\QLNS\Book Management\Book Management\obj\Debug\SuaTacGia.baml
+D:\QLNS\Book Management\Book Management\obj\Debug\TaiKhoan.baml
+D:\QLNS\Book Management\Book Management\obj\Debug\ThemHoaDon.baml
+D:\QLNS\Book Management\Book Management\obj\Debug\ThemSach.baml
+D:\QLNS\Book Management\Book Management\obj\Debug\ThemTacGia.baml
+D:\QLNS\Book Management\Book Management\obj\Debug\ThemTaiKhoan.baml
+D:\QLNS\Book Management\Book Management\obj\Debug\ThongKe.baml
+D:\QLNS\Book Management\Book Management\obj\Debug\ViewTongQuanLyNhaSach.baml
+D:\QLNS\Book Management\Book Management\obj\Debug\XoaSach.baml
+D:\QLNS\Book Management\Book Management\obj\Debug\XoaTacGia.baml
+D:\QLNS\Book Management\Book Management\obj\Debug\Book Management.g.resources
+D:\QLNS\Book Management\Book Management\obj\Debug\Book_Management.Properties.Resources.resources
+D:\QLNS\Book Management\Book Management\obj\Debug\Book Management.csproj.GenerateResource.cache
+D:\QLNS\Book Management\Book Management\obj\Debug\Book Management.csproj.CoreCompileInputs.cache
+D:\QLNS\Book Management\Book Management\obj\Debug\Book Man.2D957F58.Up2Date
+D:\QLNS\Book Management\Book Management\obj\Debug\Book Management.exe
+D:\QLNS\Book Management\Book Management\obj\Debug\Book Management.pdb
+D:\visual code resouce\Book_Management\Book Management\bin\Debug\Book Management.exe.config
+D:\visual code resouce\Book_Management\Book Management\bin\Debug\Book Management.exe
+D:\visual code resouce\Book_Management\Book Management\bin\Debug\Book Management.pdb
+D:\visual code resouce\Book_Management\Book Management\bin\Debug\Syncfusion.Licensing.dll
+D:\visual code resouce\Book_Management\Book Management\bin\Debug\Syncfusion.Shared.WPF.dll
+D:\visual code resouce\Book_Management\Book Management\bin\Debug\System.Data.SqlClient.dll
+D:\visual code resouce\Book_Management\Book Management\bin\Debug\Syncfusion.Shared.WPF.xml
+D:\visual code resouce\Book_Management\Book Management\bin\Debug\System.Data.SqlClient.xml
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\Book Management.csproj.AssemblyReference.cache
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\ChiTietHoaDon.g.cs
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\HoaDon.g.cs
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\Kho.g.cs
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\LinhVuc.g.cs
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\LoaiSach.g.cs
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\MainWindow.g.cs
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\NhaXuatBan.g.cs
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\SuaSach.g.cs
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\SuaTacGia.g.cs
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\TaiKhoan.g.cs
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\ThemHoaDon.g.cs
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\ThemSach.g.cs
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\ThemTacGia.g.cs
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\ThemTaiKhoan.g.cs
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\ThongKe.g.cs
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\ViewTongQuanLyNhaSach.g.cs
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\XoaSach.g.cs
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\XoaTacGia.g.cs
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\App.g.cs
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\Book Management_MarkupCompile.cache
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\Book Management_MarkupCompile.lref
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\ChiTietHoaDon.baml
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\HoaDon.baml
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\Kho.baml
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\LinhVuc.baml
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\LoaiSach.baml
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\MainWindow.baml
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\NhaXuatBan.baml
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\SuaSach.baml
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\SuaTacGia.baml
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\TaiKhoan.baml
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\ThemHoaDon.baml
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\ThemSach.baml
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\ThemTacGia.baml
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\ThemTaiKhoan.baml
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\ThongKe.baml
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\ViewTongQuanLyNhaSach.baml
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\XoaSach.baml
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\XoaTacGia.baml
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\Book Management.g.resources
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\Book_Management.Properties.Resources.resources
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\Book Management.csproj.GenerateResource.cache
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\Book Management.csproj.CoreCompileInputs.cache
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\Book Man.2D957F58.Up2Date
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\Book Management.exe
+D:\visual code resouce\Book_Management\Book Management\obj\Debug\Book Management.pdb

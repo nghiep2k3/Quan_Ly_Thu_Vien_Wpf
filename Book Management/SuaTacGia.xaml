@@ -1,0 +1,87 @@
+﻿<Window x:Class="Book_Management.SuaTacGia"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Book_Management"
+        mc:Ignorable="d"
+        Background="#FFAEEFB2"
+        Title="Sửa Tác Giả" Height="453" Width="550" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Mã tác giả:" HorizontalAlignment="Left" Height="25" Margin="10,185,0,0" VerticalAlignment="Top" Width="83" FontFamily="Times New Roman" FontSize="14"/>
+        <TextBox x:Name="txtMaTacGia" HorizontalAlignment="Left" Height="25" Margin="108,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="418"/>
+        <Label Content="Tên tác giả:" HorizontalAlignment="Left" Height="25" Margin="10,224,0,0" VerticalAlignment="Top" Width="83" FontFamily="Times New Roman" FontSize="14"/>
+        <TextBox x:Name="txtTenTacGia" HorizontalAlignment="Left" Height="25" Margin="108,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="418"/>
+        <Label Content="Quê quán:" HorizontalAlignment="Left" Height="25" Margin="10,263,0,0" VerticalAlignment="Top" Width="83" FontFamily="Times New Roman" FontSize="14"/>
+        <TextBox x:Name="txtQueQuan" HorizontalAlignment="Left" Height="25" Margin="108,263,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="308"/>
+        <CheckBox x:Name="chkQueQuan" Content="Chưa rõ" HorizontalAlignment="Left" Height="25" Margin="441,263,0,0" VerticalAlignment="Top" Width="85" FontFamily="Times New Roman" FontSize="14" Checked="chkQueQuan_Checked" Unchecked="chkQueQuan_Unchecked"/>
+        <Label Content="Ngày sinh:" HorizontalAlignment="Left" Height="25" Margin="9,303,0,0" VerticalAlignment="Top" Width="85" FontFamily="Times New Roman" FontSize="14"/>
+        <DatePicker x:Name="DatePickerNgaySinh" HorizontalAlignment="Left" Height="25" Margin="108,303,0,0" VerticalAlignment="Top" Width="308" FontFamily="Times New Roman" FontSize="14"/>
+        <CheckBox x:Name="chkNgaySinh" Content="Chưa rõ" HorizontalAlignment="Left" Height="25" Margin="441,303,0,0" VerticalAlignment="Top" Width="85" FontFamily="Times New Roman" FontSize="14" Checked="chkNgaySinh_Checked" Unchecked="chkNgaySinh_Unchecked"/>
+        <Label Content="Ngày mất:" HorizontalAlignment="Left" Height="25" Margin="9,342,0,0" VerticalAlignment="Top" Width="85" FontFamily="Times New Roman" FontSize="14"/>
+        <DatePicker x:Name="DatePickerNgayMat" HorizontalAlignment="Left" Height="25" Margin="108,342,0,0" VerticalAlignment="Top" Width="308" FontFamily="Times New Roman" FontSize="14"/>
+        <CheckBox x:Name="chkNgayMat" Content="Chưa rõ" HorizontalAlignment="Left" Height="25" Margin="441,342,0,0" VerticalAlignment="Top" Width="85" FontFamily="Times New Roman" FontSize="14" Checked="chkNgayMat_Checked" Unchecked="chkNgayMat_Unchecked"/>
+
+        <Button x:Name="btChon" Content="Chọn" HorizontalAlignment="Left" Height="25" 
+                Margin="10,379,0,0" VerticalAlignment="Top" Width="70" FontFamily="Times New Roman"
+                FontSize="15" Click="btChon_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                            <RotateTransform Angle="-64.983" CenterX="0.5" CenterY="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FFE1DCFA"/>
+                    <GradientStop Color="#FFE7F6FD" Offset="5"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="btLuu" Content="Lưu" HorizontalAlignment="Left" Height="25" 
+                Margin="461,379,0,0" VerticalAlignment="Top" Width="65" FontFamily="Times New Roman" 
+                FontSize="14" Click="btLuu_Click">
+
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                            <RotateTransform Angle="-64.983" CenterX="0.5" CenterY="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FFE1DCFA"/>
+                    <GradientStop Color="#FFE7F6FD" Offset="5"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <ListView x:Name="dgvTacGia" HorizontalAlignment="Left" Height="170" Margin="10,10,0,0" VerticalAlignment="Top" Width="516" SelectionChanged="dgvTacGia_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="MÃ TÁC GIẢ" DisplayMemberBinding="{Binding MATG}" Width="90"/>
+                    <GridViewColumn Header="TÊN TÁC GIẢ" DisplayMemberBinding="{Binding TENTG}" Width="120"/>
+                    <GridViewColumn Header="NĂM SINH" DisplayMemberBinding="{Binding NAMSINH}" Width="90"/>
+                    <GridViewColumn Header="NĂM MẤT" DisplayMemberBinding="{Binding NAMMAT}" Width="90"/>
+                    <GridViewColumn Header="QUÊ QUÁN" DisplayMemberBinding="{Binding QUEQUAN}" Width="120"/>
+
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+    </Grid>
+</Window>
