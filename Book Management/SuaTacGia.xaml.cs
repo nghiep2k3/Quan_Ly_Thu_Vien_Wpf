@@ -91,7 +91,6 @@ namespace Book_Management
                     txtMaTacGia.Text = "";
                     txtTenTacGia.Text = "";
                     txtQueQuan.Text = "";
-                    chkQueQuan.IsChecked = false;
                     chkNgaySinh.IsChecked = false;
                     chkNgayMat.IsChecked = false;
                     DatePickerNgaySinh.SelectedDate = null;
@@ -117,19 +116,28 @@ namespace Book_Management
 
         private void chkQueQuan_Checked(object sender, RoutedEventArgs e)
         {
-            chkQueQuan.Content = "(Không có thông tin)";
             txtQueQuan.Text = "(Không có thông tin)";
             txtQueQuan.IsReadOnly = true;
         }
 
         private void chkQueQuan_Unchecked(object sender, RoutedEventArgs e)
         {
-            chkQueQuan.Content = "CHƯA RÕ";
             txtQueQuan.Text = "";
             txtQueQuan.IsReadOnly = false;
         }
 
         private void chkNgaySinh_Checked(object sender, RoutedEventArgs e)
+        {
+            if (chkNgaySinh.IsChecked == true)
+            {
+                DatePickerNgaySinh.SelectedDate = DateTime.MinValue;
+            }
+            else
+            {
+                DatePickerNgaySinh.SelectedDate = DateTime.Now;
+            }
+        }
+        private void chkNgaySinh_Unchecked(object sender, RoutedEventArgs e)
         {
             if (chkNgaySinh.IsChecked == true)
             {
@@ -151,18 +159,7 @@ namespace Book_Management
             {
                 DatePickerNgayMat.SelectedDate = DateTime.Now;
             }
-        }
 
-        private void chkNgaySinh_Unchecked(object sender, RoutedEventArgs e)
-        {
-            if (chkNgaySinh.IsChecked == true)
-            {
-                DatePickerNgaySinh.SelectedDate = DateTime.MinValue;
-            }
-            else
-            {
-                DatePickerNgaySinh.SelectedDate = DateTime.Now;
-            }
         }
 
         private void chkNgayMat_Unchecked(object sender, RoutedEventArgs e)
