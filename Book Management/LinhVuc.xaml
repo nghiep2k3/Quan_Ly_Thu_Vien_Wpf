@@ -5,67 +5,45 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Book_Management"
         mc:Ignorable="d"
-        Background="#FFAEEFB2"
-        Title="Lĩnh Vực" Height="400" Width="511" WindowStartupLocation="CenterScreen">
+        Background="#8EC5FC"
+        Title="Lĩnh Vực" Height="500" Width="511" WindowStartupLocation="CenterScreen">
     <Grid x:Name="btThem1">
-        <ListView x:Name="dgvLinhVuc" HorizontalAlignment="Left" Height="211" Margin="10,10,0,0" VerticalAlignment="Top" Width="475" FontFamily="Times New Roman" FontSize="14" SelectionChanged="dgvLinhVuc_SelectionChanged">
+        <ListView x:Name="dgvLinhVuc" HorizontalAlignment="Left" Height="211" Margin="10,40,0,0" VerticalAlignment="Top" Width="475" FontFamily="Times New Roman" FontSize="14" SelectionChanged="dgvLinhVuc_SelectionChanged">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn />
-
+                    <GridViewColumn Header="Lĩnh vực"  DisplayMemberBinding="{Binding}"/>
                 </GridView>
             </ListView.View>
         </ListView>
-        <Label Content="Thêm lĩnh vực:" HorizontalAlignment="Left" Height="25" Margin="10,260,0,0" VerticalAlignment="Top" Width="133" FontSize="14" FontFamily="Times New Roman"/>
-        <TextBox x:Name="txtThemLinhVuc" HorizontalAlignment="Left" Height="25" Margin="148,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="241" FontSize="14" FontFamily="Times New Roman" TextChanged="txtThemLinhVuc_TextChanged"/>
-        <Label Content="Xóa lĩnh vực:" HorizontalAlignment="Left" Height="25" Margin="10,326,0,0" VerticalAlignment="Top" Width="94" FontFamily="Times New Roman" FontSize="14"/>
-        <Button x:Name="btThem" Content="Thêm" HorizontalAlignment="Left" Height="25" 
-                Margin="410,260,0,0" VerticalAlignment="Top" Width="75" FontFamily="Times New Roman" 
-                FontSize="14" Click="btThem_Click">
-            <Button.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="15"/>
-                </Style>
-            </Button.Resources>
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <LinearGradientBrush.RelativeTransform>
-                        <TransformGroup>
-                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
-                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
-                            <RotateTransform Angle="-64.983" CenterX="0.5" CenterY="0.5"/>
-                            <TranslateTransform/>
-                        </TransformGroup>
-                    </LinearGradientBrush.RelativeTransform>
-                    <GradientStop Color="#FFE1DCFA"/>
-                    <GradientStop Color="#FFE7F6FD" Offset="5"/>
-                </LinearGradientBrush>
-            </Button.Background>
+        <Label Content="Thêm lĩnh vực:"  HorizontalAlignment="Left" Height="25" Margin="10,282,0,0" VerticalAlignment="Top" Width="133" FontSize="14" FontFamily="Times New Roman"/>
+        <TextBox x:Name="txtThemLinhVuc" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="148,282,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="241" FontSize="14" FontFamily="Times New Roman" TextChanged="txtThemLinhVuc_TextChanged"/>
+        <Label Content="Xóa lĩnh vực:" HorizontalAlignment="Left" Height="25" Margin="10,348,0,0" VerticalAlignment="Top" Width="94" FontFamily="Times New Roman" FontSize="14"/>
+        
+        <Button  x:Name="btThem" Content="Thêm" HorizontalAlignment="Left" Margin="417,281,0,0" VerticalAlignment="Top" Width="68" Height="26" Click="btThem_Click" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0"/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
         </Button>
-        <Button x:Name="btXoa" Content="Xóa" HorizontalAlignment="Left" Height="25" 
-                Margin="410,326,0,0" VerticalAlignment="Top" Width="75" FontFamily="Times New Roman" 
-                FontSize="14" Click="btXoa_Click">
-            <Button.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="15"/>
-                </Style>
-            </Button.Resources>
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <LinearGradientBrush.RelativeTransform>
-                        <TransformGroup>
-                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
-                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
-                            <RotateTransform Angle="-64.983" CenterX="0.5" CenterY="0.5"/>
-                            <TranslateTransform/>
-                        </TransformGroup>
-                    </LinearGradientBrush.RelativeTransform>
-                    <GradientStop Color="#FFE1DCFA"/>
-                    <GradientStop Color="#FFE7F6FD" Offset="5"/>
-                </LinearGradientBrush>
-            </Button.Background>
+        <Button  x:Name="btXoa" Content="Xóa" HorizontalAlignment="Left" Margin="417,343,0,0" VerticalAlignment="Top" Width="68" Height="26" Click="btXoa_Click" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0"/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
         </Button>
-        <ComboBox x:Name="cbXoaLinhVuc" HorizontalAlignment="Left" Margin="148,323,0,0" VerticalAlignment="Top" Width="241" Height="25"/>
+
+
+
+        <ComboBox x:Name="cbXoaLinhVuc" HorizontalAlignment="Left" Margin="148,345,0,0" VerticalAlignment="Top" Width="241" Height="25"/>
+        <TextBlock HorizontalAlignment="Left" Margin="160,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" TextAlignment="Center" FontSize="20" FontFamily="Times New Roman" Foreground="Black" FontWeight="Bold" Text="LĨNH VỰC"/>
 
     </Grid>
 </Window>

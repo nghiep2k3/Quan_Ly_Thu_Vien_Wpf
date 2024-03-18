@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Book_Management"
         mc:Ignorable="d"
-        Background="#FFAEEFB2"
+        Background="#8EC5FC"
         Title="Xóa Tác Giả" Height="444" Width="650" FontFamily="Times New Roman" FontSize="14" WindowStartupLocation="CenterScreen">
     <Grid>
         <ListView x:Name="dgvXoaTacGia" HorizontalAlignment="Center" Height="354" Margin="0,10,0,0" VerticalAlignment="Top" Width="630" SelectionChanged="dgvXoaTacGia_SelectionChanged">
@@ -20,51 +20,27 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button x:Name="btXoaTacGia" Content="Xóa tác giả" HorizontalAlignment="Left" Height="25" 
-                Margin="10,374,0,0" VerticalAlignment="Top" Width="85" FontSize="14"
-                Click="btXoaTacGia_Click">
-            <Button.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="15"/>
-                </Style>
-            </Button.Resources>
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <LinearGradientBrush.RelativeTransform>
-                        <TransformGroup>
-                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
-                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
-                            <RotateTransform Angle="-64.983" CenterX="0.5" CenterY="0.5"/>
-                            <TranslateTransform/>
-                        </TransformGroup>
-                    </LinearGradientBrush.RelativeTransform>
-                    <GradientStop Color="#FFE1DCFA"/>
-                    <GradientStop Color="#FFE7F6FD" Offset="5"/>
-                </LinearGradientBrush>
-            </Button.Background>
+
+        <Button  x:Name="btXoaTacGia" Content="Xóa tác giả" HorizontalAlignment="Left" Margin="10,377,0,0" VerticalAlignment="Top" Width="84" Height="26" Click="btXoaTacGia_Click" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0"/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
         </Button>
-        <Button x:Name="btThoat" Content="Thoát" HorizontalAlignment="Left" Height="25" 
-                Margin="575,374,0,0" VerticalAlignment="Top" Width="65"
-                FontSize="14" Click="btThoat_Click">
-            <Button.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="15"/>
-                </Style>
-            </Button.Resources>
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <LinearGradientBrush.RelativeTransform>
-                        <TransformGroup>
-                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
-                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
-                            <RotateTransform Angle="-64.983" CenterX="0.5" CenterY="0.5"/>
-                            <TranslateTransform/>
-                        </TransformGroup>
-                    </LinearGradientBrush.RelativeTransform>
-                    <GradientStop Color="#FFE1DCFA"/>
-                    <GradientStop Color="#FFE7F6FD" Offset="5"/>
-                </LinearGradientBrush>
-            </Button.Background>
+
+        <Button  x:Name="btThoat" Content="Thoát" HorizontalAlignment="Left" Margin="556,382,0,0" VerticalAlignment="Top" Width="84" Height="26" Click="btThoat_Click" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0"/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
         </Button>
     </Grid>
 </Window>
