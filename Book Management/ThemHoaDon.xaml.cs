@@ -131,7 +131,7 @@ namespace Book_Management
 
         private void btThemHoaDon_Click(object sender, RoutedEventArgs e)
         {
-            // Retrieve values from UI controls
+             // Retrieve values from UI controls
             string tenKH = txtTenKH.Text.Trim();
             double tongTien = 0;
             foreach (dynamic item in lvChiTiet.Items)

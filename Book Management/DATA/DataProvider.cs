@@ -27,7 +27,7 @@ namespace Book_Management
 
         private DataProvider() { }
 
-        private string connectionSTR = @"Data Source=LAPTOP-2KMTSAL1;Initial Catalog=QLNS;Integrated Security=True";
+        private string connectionSTR = @"Data Source=DESKTOP-6VK8095;Initial Catalog=QLNS;Integrated Security=True";
 
 
         public DataTable ExecuteQuery(string query, object[] paramater = null)

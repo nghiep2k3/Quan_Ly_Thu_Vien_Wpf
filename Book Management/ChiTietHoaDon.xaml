@@ -6,15 +6,21 @@
         xmlns:local="clr-namespace:Book_Management"
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="Book_Management.ChiTietHoaDon"
         mc:Ignorable="d"
-        Background="#FFAEEFB2"
+        Background="#FFEEE1BA"
         Title="Chi Tiết Hóa Đơn" Height="600" Width="650" WindowStartupLocation="CenterScreen">
-    <Grid  Margin="10,0,-9,0">
-        <TextBox x:Name="txtMaDon" HorizontalAlignment="Left" Margin="128,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92" Height="25" IsEnabled="False"/>
-        <Label Content="Mã Hóa Đơn" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="24" Width="94" FontFamily="Times New Roman" FontSize="14"/>
+    <Grid  Margin="10,0,-9,0" Background="#FFEEE1BA">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="271*"/>
+            <RowDefinition Height="55*"/>
+            <RowDefinition Height="129*"/>
+            <RowDefinition Height="129*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="txtMaDon" HorizontalAlignment="Left" Margin="118,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92" Height="25" IsEnabled="False"/>
+        <Label Content="Mã Hóa Đơn:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="24" Width="94" FontFamily="Times New Roman" FontSize="14"/>
         <TextBox x:Name="txtTenKhachHang" HorizontalAlignment="Left" Margin="129,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="204" Height="25"/>
-        <Label Content="Tên Khách Hàng" HorizontalAlignment="Left" Margin="6,50,0,0" VerticalAlignment="Top" Height="31" Width="118" FontFamily="Times New Roman" FontSize="14"/>
-        <Button x:Name="btCapNhat" Content="Cập nhật" HorizontalAlignment="Left" Margin="502,295,0,0" VerticalAlignment="Top" Width="80" 
-                RenderTransformOrigin="-0.167,0.303" Click="btCapNhat_Click" Height="25" FontFamily="Times New Roman" FontSize="14" >
+        <Label Content="Tên Khách Hàng:" HorizontalAlignment="Left" Margin="6,50,0,0" VerticalAlignment="Top" Height="31" Width="118" FontFamily="Times New Roman" FontSize="14"/>
+        <Button x:Name="btCapNhat" Content="Cập nhật" HorizontalAlignment="Left" Margin="502,24,0,0" VerticalAlignment="Top" Width="80" 
+                RenderTransformOrigin="-0.167,0.303" Click="btCapNhat_Click" Height="25" FontFamily="Times New Roman" FontSize="14" Grid.Row="1" >
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>
@@ -35,8 +41,8 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="btBack" Content="Trở lại" HorizontalAlignment="Left" Margin="547,503,0,0" VerticalAlignment="Top" 
-                Width="80" Click="btBack_Click" RenderTransformOrigin="0.655,-1.251" Height="25" FontFamily="Times New Roman" FontSize="14" >
+        <Button x:Name="btBack" Content="Trở lại" HorizontalAlignment="Left" Margin="31,82,0,0" VerticalAlignment="Top" 
+                Width="109" Click="btBack_Click" RenderTransformOrigin="0.655,-1.251" Height="30" FontFamily="Times New Roman" FontSize="14" Grid.Row="3" >
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>
@@ -57,7 +63,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <ListView x:Name="lvChiTiet" Margin="13,89,30,344" SelectionChanged="lvChiTiet_SelectionChanged">
+        <ListView x:Name="lvChiTiet" Margin="13,89,30,32" SelectionChanged="lvChiTiet_SelectionChanged">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Mã Sách" DisplayMemberBinding="{Binding MASACH}" Width="90"/>
@@ -68,8 +74,8 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button x:Name="btHoanTat" Content="Hoàn tất" HorizontalAlignment="Left" Margin="548,462,0,0" VerticalAlignment="Top" 
-                Width="80" Click="btHoanTat_Click" Height="25" FontFamily="Times New Roman" FontSize="14" >
+        <Button x:Name="btHoanTat" Content="Hoàn tất" HorizontalAlignment="Left" Margin="502,81,0,0" VerticalAlignment="Top" 
+                Width="128" Click="btHoanTat_Click" Height="31" FontFamily="Times New Roman" FontSize="14" Grid.Row="3" >
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>
@@ -91,7 +97,7 @@
             </Button.Background>
         </Button>
         <Button x:Name="btXoa" Content="Xóa Sách" HorizontalAlignment="Left" Margin="168,255,0,0" VerticalAlignment="Top" 
-                Height="25" Width="85" Click="btXoa_Click" FontFamily="Times New Roman" FontSize="14">
+                Height="25" Width="85" Click="btXoa_Click" FontFamily="Times New Roman" FontSize="14" Grid.RowSpan="2">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>
@@ -113,7 +119,7 @@
             </Button.Background>
         </Button>
         <Button x:Name="btThemSach" Content="Thêm Sách" HorizontalAlignment="Left" Margin="50,255,0,0" Height="25" 
-                VerticalAlignment="Top" Width="90" Click="btThemSach_Click" FontFamily="Times New Roman" FontSize="14" >
+                VerticalAlignment="Top" Width="90" Click="btThemSach_Click" FontFamily="Times New Roman" FontSize="14" Grid.RowSpan="2" >
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>
@@ -134,8 +140,8 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="btThem" Content="Thêm" HorizontalAlignment="Left" Margin="46,355,0,0" Height="25" 
-                VerticalAlignment="Top" Width="70" Click="btThem_Click" FontFamily="Times New Roman" FontSize="14">
+        <Button x:Name="btThem" Content="Thêm" HorizontalAlignment="Left" Margin="104,12,0,0" Height="25" 
+                VerticalAlignment="Top" Width="70" Click="btThem_Click" FontFamily="Times New Roman" FontSize="14" Grid.Row="2">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>
@@ -156,8 +162,8 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="btHuyThem" Content="Hủy Thêm" HorizontalAlignment="Left" Margin="149,357,0,0" VerticalAlignment="Top" 
-                Width="90" Height="25" Click="btHuyThem_Click" FontFamily="Times New Roman" FontSize="14">
+        <Button x:Name="btHuyThem" Content="Hủy Thêm" HorizontalAlignment="Left" Margin="373,12,0,0" VerticalAlignment="Top" 
+                Width="90" Height="25" Click="btHuyThem_Click" FontFamily="Times New Roman" FontSize="14" Grid.Row="2">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>
@@ -178,7 +184,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <ListView x:Name="lvChonSach" Margin="40,402,191,30" SelectionChanged="lvChonSach_SelectionChanged">
+        <ListView x:Name="lvChonSach" Margin="81,47,150,58" SelectionChanged="lvChonSach_SelectionChanged" Grid.RowSpan="2" Grid.Row="2">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Mã Sách" DisplayMemberBinding="{Binding MASACH}" Width="130"/>
@@ -187,10 +193,10 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Label Content="Số lượng" HorizontalAlignment="Left" Height="26" Margin="420,254,0,0" VerticalAlignment="Top" Width="63" FontFamily="Times New Roman" FontSize="14" RenderTransformOrigin="0.524,0.117"/>
-        <syncfusion:UpDown x:Name="UpDownSoLuong" HorizontalAlignment="Left" Height="26" Margin="493,255,0,0" NullValueText="Enter your weight:" UseNullOption="True" Value="1" VerticalAlignment="Top" Width="91" RenderTransformOrigin="0.286,0.463"/>
-        <TextBox x:Name="txtThoiGian" HorizontalAlignment="Left" Margin="509,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="112" Height="25" IsEnabled="False"/>
-        <Label Content="Thời gian" HorizontalAlignment="Left" Margin="405,10,0,0" VerticalAlignment="Top" Height="29" Width="78" FontFamily="Times New Roman" FontSize="14"/>
+        <Label Content="Số lượng" HorizontalAlignment="Left" Height="26" Margin="420,254,0,0" VerticalAlignment="Top" Width="63" FontFamily="Times New Roman" FontSize="14" RenderTransformOrigin="0.524,0.117" Grid.RowSpan="2"/>
+        <syncfusion:UpDown x:Name="UpDownSoLuong" HorizontalAlignment="Left" Height="26" Margin="493,255,0,0" NullValueText="Enter your weight:" UseNullOption="True" Value="1" VerticalAlignment="Top" Width="91" RenderTransformOrigin="0.286,0.463" Grid.RowSpan="2"/>
+        <TextBox x:Name="txtThoiGian" HorizontalAlignment="Left" Margin="507,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="112" Height="25" IsEnabled="False"/>
+        <Label Content="Thời Gian:" HorizontalAlignment="Left" Margin="424,12,0,0" VerticalAlignment="Top" Height="29" Width="78" FontFamily="Times New Roman" FontSize="14"/>
         <Button Content="Refresh" HorizontalAlignment="Left" Margin="551,48,0,0" VerticalAlignment="Top" Height="26" Width="70" Click="Button_Click" FontFamily="Times New Roman" FontSize="14">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
