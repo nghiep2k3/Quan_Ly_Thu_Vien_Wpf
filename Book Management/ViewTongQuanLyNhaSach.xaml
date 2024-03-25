@@ -101,7 +101,7 @@
                     </MenuItem.Icon>
                 </MenuItem>
             </MenuItem>
-            <MenuItem x:Name="MenuHoaDon" Header="Hóa đơn" FontFamily="Times New Roman" FontSize="16" Click="MenuHoaDon_Click">
+            <MenuItem x:Name="MenuHoaDon" Header="Khách Thuê" FontFamily="Times New Roman" FontSize="16" Click="MenuHoaDon_Click">
                 <MenuItem.Icon>
                     <Image Source="/Hinhanh/design-vector.jpg" />
                 </MenuItem.Icon>
