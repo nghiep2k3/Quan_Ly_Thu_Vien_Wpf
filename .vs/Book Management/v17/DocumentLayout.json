@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\visual code resouce\\Book_Management\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3E623ABD-A344-4147-8163-AE3C57EFD51F}|Book Management\\Book Management.csproj|d:\\visual code resouce\\book_management\\book management\\viewtongquanlynhasach.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3E623ABD-A344-4147-8163-AE3C57EFD51F}|Book Management\\Book Management.csproj|solutionrelative:book management\\viewtongquanlynhasach.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ViewTongQuanLyNhaSach.xaml",
+              "DocumentMoniker": "D:\\visual code resouce\\Book_Management\\Book Management\\ViewTongQuanLyNhaSach.xaml",
+              "RelativeDocumentMoniker": "Book Management\\ViewTongQuanLyNhaSach.xaml",
+              "ToolTip": "D:\\visual code resouce\\Book_Management\\Book Management\\ViewTongQuanLyNhaSach.xaml",
+              "RelativeToolTip": "Book Management\\ViewTongQuanLyNhaSach.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-20T14:46:45.055Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
