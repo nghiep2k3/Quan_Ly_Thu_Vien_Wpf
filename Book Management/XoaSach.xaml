@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Book_Management"
         mc:Ignorable="d"
-        Background="#FFAEEFB2"
+        Background="#FFEEE1BA"
         Title="Xóa Sách" Height="444" Width="511" FontFamily="Times New Roman" WindowStartupLocation="CenterScreen">
     <Grid>
         <ListView x:Name="lvSach" HorizontalAlignment="Left" Height="354" Margin="10,10,0,0" VerticalAlignment="Top" Width="478">

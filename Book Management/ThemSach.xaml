@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Book_Management"
 
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="Book_Management.ThemSach"
-        Background="#FFAEEFB2"
+        Background="#FFEEE1BA"
         mc:Ignorable="d"
         Title="Thêm Sách" Height="554" Width="360" FontFamily="Times New Roman" FontSize="14" WindowStartupLocation="CenterScreen">
     <Grid>

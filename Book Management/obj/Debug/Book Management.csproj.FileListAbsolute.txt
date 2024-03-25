@@ -108,3 +108,58 @@ D:\visual code resouce\Book_Management\Book Management\obj\Debug\Book Management
 D:\visual code resouce\Book_Management\Book Management\obj\Debug\Book Man.2D957F58.Up2Date
 D:\visual code resouce\Book_Management\Book Management\obj\Debug\Book Management.exe
 D:\visual code resouce\Book_Management\Book Management\obj\Debug\Book Management.pdb
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\bin\Debug\Book Management.exe.config
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\bin\Debug\Book Management.exe
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\bin\Debug\Book Management.pdb
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\bin\Debug\Syncfusion.Licensing.dll
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\bin\Debug\Syncfusion.Shared.WPF.dll
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\bin\Debug\System.Data.SqlClient.dll
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\bin\Debug\Syncfusion.Shared.WPF.xml
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\bin\Debug\System.Data.SqlClient.xml
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\Book Management.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\ChiTietHoaDon.g.cs
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\HoaDon.g.cs
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\Kho.g.cs
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\LinhVuc.g.cs
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\LoaiSach.g.cs
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\MainWindow.g.cs
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\NhaXuatBan.g.cs
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\SuaSach.g.cs
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\SuaTacGia.g.cs
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\TaiKhoan.g.cs
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\ThemHoaDon.g.cs
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\ThemSach.g.cs
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\ThemTacGia.g.cs
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\ThemTaiKhoan.g.cs
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\ThongKe.g.cs
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\ViewTongQuanLyNhaSach.g.cs
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\XoaSach.g.cs
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\XoaTacGia.g.cs
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\App.g.cs
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\Book Management_MarkupCompile.cache
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\Book Management_MarkupCompile.lref
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\ChiTietHoaDon.baml
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\HoaDon.baml
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\Kho.baml
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\LinhVuc.baml
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\LoaiSach.baml
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\MainWindow.baml
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\NhaXuatBan.baml
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\SuaSach.baml
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\SuaTacGia.baml
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\TaiKhoan.baml
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\ThemHoaDon.baml
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\ThemSach.baml
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\ThemTacGia.baml
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\ThemTaiKhoan.baml
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\ThongKe.baml
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\ViewTongQuanLyNhaSach.baml
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\XoaSach.baml
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\XoaTacGia.baml
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\Book Management.g.resources
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\Book_Management.Properties.Resources.resources
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\Book Management.csproj.GenerateResource.cache
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\Book Management.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\Book Management.csproj.CopyComplete
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\Book Management.exe
+C:\Users\ADMIN\Desktop\qls\Quan_Ly_Thu_Vien_Wpf\Book Management\obj\Debug\Book Management.pdb

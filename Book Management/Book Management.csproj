@@ -294,5 +294,8 @@
   <ItemGroup>
     <Resource Include="Hinhanh\3-dot-icon-7.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Hinhanh\background.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:Book_Management"
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="Book_Management.Kho"
         mc:Ignorable="d"
-        Background="#FFAEEFB2"
-        Title="Kho Sách" Height="400" Width="586" FontFamily="Times New Roman" FontSize="14" WindowStartupLocation="CenterScreen">
+        Background="#FFEEE1BA"
+        Title="Cập nhật số lượng sách" Height="400" Width="586" FontFamily="Times New Roman" FontSize="14" WindowStartupLocation="CenterScreen">
     <Grid Margin="0,0,-11,-6" Width="597">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="21*"/>

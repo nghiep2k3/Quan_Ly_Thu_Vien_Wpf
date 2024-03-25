@@ -8,7 +8,7 @@
         Title="Quản Lý Nhà Sách" Height="450" Width="1250" FontFamily="Times New Roman" WindowStartupLocation="CenterScreen" Loaded="ViewTong_Loaded"
     Language="vi-VN" xml:lang="vi-VN">
     <Window.Background>
-        <ImageBrush ImageSource="/Hinhanh/anhnenthuvien.jpg"/>
+        <ImageBrush ImageSource="/Hinhanh/background.jpg"/>
     </Window.Background>
     <Grid>
         <ListView x:Name="lstSach" HorizontalAlignment="Center" Height="262" Margin="0,45,0,0" VerticalAlignment="Top" Width="1250" Opacity="0.8">
@@ -26,7 +26,7 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Menu Margin="0,0,0,389" Background="#FF57E36A">
+        <Menu Margin="0,0,0,389" Background="#FFEEE1BA">
 
             <MenuItem Header="Tài Khoản" FontFamily="Times New Roman" FontSize="16">
                 <MenuItem.Icon>
@@ -101,12 +101,12 @@
                     </MenuItem.Icon>
                 </MenuItem>
             </MenuItem>
-            <MenuItem x:Name="MenuHoaDon" Header="Hóa đơn" FontFamily="Times New Roman" FontSize="16" Click="MenuHoaDon_Click">
+            <MenuItem x:Name="MenuHoaDon" Header="Khách Thuê" FontFamily="Times New Roman" FontSize="16" Click="MenuHoaDon_Click">
                 <MenuItem.Icon>
                     <Image Source="/Hinhanh/design-vector.jpg" />
                 </MenuItem.Icon>
             </MenuItem>
-            <MenuItem x:Name="MenuKho" Header="Kho" FontSize="16" FontFamily="Times New Roman" Click="MenuKho_Click">
+            <MenuItem x:Name="MenuKho" Header="Cập nhật số lượng sách" FontSize="16" FontFamily="Times New Roman" Click="MenuKho_Click">
                 <MenuItem.Icon>
                     <Image Source="/Hinhanh/quan-ly-kho.png" />
                 </MenuItem.Icon>
@@ -121,7 +121,7 @@
                     <Image Source="/Hinhanh/statistics-icon.png" />
                 </MenuItem.Icon>
             </MenuItem>
-            <Button Content="Refresh" Height="26" Width="59" Click="Button_Click" BorderBrush="#FF702222" Foreground="#FF701515" Background="#FF57E36A"/>
+            <Button Content="Refresh" Height="26" Width="59" Click="Button_Click" BorderBrush="#FF702222" Foreground="#FF701515" Background="#FFEEE1BA"/>
         </Menu>
         <Label Content="Người dùng:" HorizontalAlignment="Left" Height="26" Margin="1045,22,0,0" VerticalAlignment="Top" Width="88" FontSize="14" FontWeight="Bold"/>
         <TextBox x:Name="txtTenNguoiDung" HorizontalAlignment="Left" Height="20" Margin="1154,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86" FontSize="14" Background="{x:Null}" FontWeight="Bold"/>

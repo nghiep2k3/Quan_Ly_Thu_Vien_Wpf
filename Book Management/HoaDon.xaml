@@ -6,10 +6,21 @@
         xmlns:local="clr-namespace:Book_Management"
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="Book_Management.HoaDon"
         mc:Ignorable="d"
-        Background="#FFAEEFB2"
-        Title="Hóa Đơn" Height="528" Width="500" WindowStartupLocation="CenterScreen" FontSize="14" FontFamily="Times New Roman">
-    <Grid>
-        <ListView x:Name="lvHoaDon" HorizontalAlignment="Left" Height="354" Margin="10,59,0,0" VerticalAlignment="Top" Width="462" FontFamily="Times New Roman" FontSize="14" SelectionChanged="lvHoaDon_SelectionChanged">
+        Background="#FFEEE1BA"
+        Title="Danh Sách Người Thuê" Height="550" Width="566" WindowStartupLocation="CenterScreen" FontSize="14" FontFamily="Times New Roman">
+    <Grid Background="#FFEEE1BA">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="289*"/>
+            <RowDefinition Height="245*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="57*"/>
+            <ColumnDefinition Width="23*"/>
+            <ColumnDefinition Width="80*"/>
+            <ColumnDefinition Width="113*"/>
+            <ColumnDefinition Width="227*"/>
+        </Grid.ColumnDefinitions>
+        <ListView x:Name="lvHoaDon" HorizontalAlignment="Left" Height="354" Margin="19,59,0,0" VerticalAlignment="Top" Width="496" FontFamily="Times New Roman" FontSize="14" SelectionChanged="lvHoaDon_SelectionChanged" Grid.ColumnSpan="5" Grid.RowSpan="2">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Mã Đơn" Width="100"/>
@@ -18,8 +29,8 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Label Content="Tìm kiếm" HorizontalAlignment="Left" Height="26" Margin="20,10,0,0" VerticalAlignment="Top" Width="84" FontFamily="Times New Roman" FontSize="14"/>
-        <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Height="26" Margin="99,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="284" FontFamily="Times New Roman" FontSize="14" TextChanged="txtSearch_TextChanged">
+        <Label Content="Tìm kiếm" HorizontalAlignment="Left" Height="26" Margin="46,10,0,0" VerticalAlignment="Top" Width="84" FontFamily="Times New Roman" FontSize="14" Grid.ColumnSpan="3"/>
+        <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Height="26" Margin="45,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="284" FontFamily="Times New Roman" FontSize="14" TextChanged="txtSearch_TextChanged" Grid.Column="2" Grid.ColumnSpan="3">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -27,8 +38,8 @@
             </TextBox.Resources>
         </TextBox>
         <Button x:Name="btChiTiet" Content="Chi tiết" HorizontalAlignment="Left" Height="26" 
-            Margin="262,444,0,0" VerticalAlignment="Top" Width="100" FontFamily="Times New Roman" 
-            FontSize="14" RenderTransformOrigin="1.928,1.127" Click="btChiTiet_Click">
+            Margin="102,155,0,0" VerticalAlignment="Top" Width="100" FontFamily="Times New Roman" 
+            FontSize="14" RenderTransformOrigin="1.928,1.127" Click="btChiTiet_Click" Grid.Column="3" Grid.ColumnSpan="2" Grid.Row="1">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>
@@ -49,9 +60,9 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="btThem" Content="Thêm hóa đơn" HorizontalAlignment="Left" Height="26" 
-            Margin="10,444,0,0" VerticalAlignment="Top" Width="104" FontFamily="Times New Roman" 
-            FontSize="14" Click="btThem_Click" >
+        <Button x:Name="btThem" Content="Thêm Người Thuê" HorizontalAlignment="Left" Height="26" 
+            Margin="20,155,0,0" VerticalAlignment="Top" Width="110" FontFamily="Times New Roman" 
+            FontSize="14" Click="btThem_Click" Grid.ColumnSpan="3" Grid.Row="1" >
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>
@@ -73,8 +84,8 @@
             </Button.Background>
         </Button>
         <Button x:Name="btBack" Content="Trở lại" HorizontalAlignment="Left" Height="26" 
-            Margin="384,444,0,0" VerticalAlignment="Top" Width="90" FontFamily="Times New Roman" 
-            FontSize="14" RenderTransformOrigin="1.928,1.127" Click="btBack_Click" >
+            Margin="88,155,0,0" VerticalAlignment="Top" Width="118" FontFamily="Times New Roman" 
+            FontSize="14" RenderTransformOrigin="1.928,1.127" Click="btBack_Click" Grid.Column="4" Grid.Row="1" >
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>
@@ -95,9 +106,9 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="btXoa" Content="Xóa hóa đơn" HorizontalAlignment="Left" Height="26" 
-            Margin="135,444,0,0" VerticalAlignment="Top" Width="106" FontFamily="Times New Roman" 
-            FontSize="14" RenderTransformOrigin="1.928,1.127" Click="btXoa_Click" >
+        <Button x:Name="btXoa" Content="Xóa" HorizontalAlignment="Left" Height="26" 
+            Margin="69,155,0,0" VerticalAlignment="Top" Width="106" FontFamily="Times New Roman" 
+            FontSize="14" RenderTransformOrigin="1.928,1.127" Click="btXoa_Click" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="1" >
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>
@@ -118,7 +129,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button Content="Refresh" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="26" Click="Button_Click" Margin="397,10,0,0">
+        <Button Content="Refresh" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="26" Click="Button_Click" Margin="136,10,0,0" Grid.Column="4">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>

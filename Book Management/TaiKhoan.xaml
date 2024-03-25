@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Book_Management"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Background="#FFAEEFB2"
+        Background="#FFEEE1BA"
         Title="Cập nhật Tài Khoản" Height="444" Width="511" FontFamily="Times New Roman" FontSize="14" WindowStartupLocation="CenterScreen">
     <Grid>
         <ListView x:Name="dgvTaiKhoan" HorizontalAlignment="Left" Height="100" Margin="10,10,0,0" VerticalAlignment="Top" Width="475">

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Book_Management"
         mc:Ignorable="d"
-        Background="#8EC5FC"
+        Background="#FFEEE1BA"
         Title="Lĩnh Vực" Height="500" Width="511" WindowStartupLocation="CenterScreen">
     <Grid x:Name="btThem1">
         <ListView x:Name="dgvLinhVuc" HorizontalAlignment="Left" Height="211" Margin="10,40,0,0" VerticalAlignment="Top" Width="475" FontFamily="Times New Roman" FontSize="14" SelectionChanged="dgvLinhVuc_SelectionChanged">

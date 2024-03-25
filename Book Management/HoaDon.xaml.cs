@@ -52,14 +52,14 @@ namespace Book_Management
 
             gridView.Columns.Add(new GridViewColumn
             {
-                Header = "Tên Khách hàng",
+                Header = "Tên Khách Thuê",
                 DisplayMemberBinding = new Binding("TENKHACHHANG"),
                 Width = 100
             });
 
             gridView.Columns.Add(new GridViewColumn
             {
-                Header = "Ngày lập",
+                Header = "Ngày Thuê",
                 DisplayMemberBinding = new Binding("NGAYLAP"),
                 Width = 150
             });

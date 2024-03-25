@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Book_Management"
         mc:Ignorable="d"
-        Background="#8EC5FC"
+        Background="#FFEEE1BA"
         Title="Xóa Tác Giả" Height="444" Width="650" FontFamily="Times New Roman" FontSize="14" WindowStartupLocation="CenterScreen">
     <Grid>
         <ListView x:Name="dgvXoaTacGia" HorizontalAlignment="Center" Height="354" Margin="0,10,0,0" VerticalAlignment="Top" Width="630" SelectionChanged="dgvXoaTacGia_SelectionChanged">
