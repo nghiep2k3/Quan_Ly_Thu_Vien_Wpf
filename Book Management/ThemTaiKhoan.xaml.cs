@@ -22,7 +22,7 @@ namespace Book_Management
     /// </summary>
     public partial class ThemTaiKhoan : Window
     {
-        private string connectionString = @"Data Source=VIET;Initial Catalog=QLNS;User ID=sa;Password=123456";
+        private string connectionString = @"Data Source=DESKTOP-HKC8B7E\HONGPHUOC;Initial Catalog=QLNS;Integrated Security=True";
         public ThemTaiKhoan()
         {
             InitializeComponent();

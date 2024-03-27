@@ -21,7 +21,7 @@ namespace Book_Management
     /// </summary>
     public partial class TaiKhoan : Window
     {
-        private string connectionString = @"Data Source=LAPTOP-2KMTSAL1;Initial Catalog=QLNS;Integrated Security=True";
+        private string connectionString = @"Data Source=DESKTOP-HKC8B7E\HONGPHUOC;Initial Catalog=QLNS;Integrated Security=True";
         public TaiKhoan()
         {
             InitializeComponent();

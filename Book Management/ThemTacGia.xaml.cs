@@ -102,7 +102,6 @@ namespace Book_Management
             txtMaTacGia.Text = MaTacGia();
             txtTenTacGia.Text = "";
             txtQueQuan.Text = "";
-            /* chkQueQuan.IsChecked = false; */
             chkNgaySinh.IsChecked = false;
             chkNgayMat.IsChecked = false;
             DatePickerNgaySinh.Text = DateTime.Now.ToString();

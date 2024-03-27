@@ -163,7 +163,7 @@ namespace Book_Management
         {
             fViewTong_Load();
             string query = "Select TENSACH, TENTG, TENLINHVUC, TENLOAISACH, " +
-                "GIABIA, LANTAIBAN, TENNHAXUATBAN, NAMXUATBAN From SACH LEFT JOIN TACGIA " +
+                "LANTAIBAN, TENNHAXUATBAN, NAMXUATBAN From SACH LEFT JOIN TACGIA " +
                 "ON SACH.MATG = TACGIA.MATG";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
@@ -172,27 +172,11 @@ namespace Book_Management
 
             string timenow = DateTime.Now.ToString("yyyy-MM-dd");
             Console.WriteLine(timenow);
-            string query2 = $"SELECT SUM(TONGTIEN) AS [DOANHTHU] FROM HOADON WHERE NGAYLAP BETWEEN '{timenow} 00:00:00' AND '{timenow} 23:59:59'";
-            DataTable data2 = DataProvider.Instance.ExecuteQuery(query2);
-            if (data2.Rows.Count > 0 && data2.Rows[0][0] != DBNull.Value)
-            {
-                txtDoanhThu.Text = data2.Rows[0][0].ToString() + " VND";
-            }
-            else
-            {
-                txtDoanhThu.Text = "0 VND";
-            }
 
-            string query3 = $"SELECT COUNT(MAHOADON) FROM HOADON WHERE NGAYLAP BETWEEN '{timenow} 00:00:00' AND '{timenow} 23:59:59'";
-            DataTable data3 = DataProvider.Instance.ExecuteQuery(query3);
-            if (data3.Rows.Count > 0 && data3.Rows[0][0] != DBNull.Value)
-            {
-                txtSLKhach.Text = data3.Rows[0][0].ToString() + " người";
-            }
-            else
-            {
-                txtSLKhach.Text = "0 người";
-            }
+
+
+
+
 
         }
 

@@ -22,7 +22,7 @@ namespace Book_Management
     public partial class LoaiSach : Window
     {
         ObservableCollection<string> loaiSachList = new ObservableCollection<string>();
-        private string connectionString = @"Data Source=LAPTOP-2KMTSAL1;Initial Catalog=QLNS;Integrated Security=True";
+        private string connectionString = @"Data Source=DESKTOP-HKC8B7E\HONGPHUOC;Initial Catalog=QLNS;Integrated Security=True";
         private List<string> loaisachList = new List<string>();
         public LoaiSach()
         {

@@ -25,7 +25,7 @@ namespace Book_Management
     public partial class LinhVuc : Window
     {
         //ObservableCollection<string> linhVucList = new ObservableCollection<string>();
-        private string connectionString = @"Data Source=LAPTOP-2KMTSAL1;Initial Catalog=QLNS;Integrated Security=True";
+        private string connectionString = @"Data Source=DESKTOP-HKC8B7E\HONGPHUOC;Initial Catalog=QLNS;Integrated Security=True";
         private List<string> linhvucList = new List<string>();
         public LinhVuc()
         {
